@@ -13,6 +13,9 @@ class WelcomeController extends Controller
     public function about() {
         return view('front.about.about-content');
     }
+    public function category() {
+        return view('front.category.category-content');
+    }
 }
 
 

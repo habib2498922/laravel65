@@ -59,13 +59,15 @@
 //});
 
 Route::get('/', 'WelcomeController@index');
-Route::get('/about', 'WelcomeController@about');
+Route::get('/category', 'WelcomeController@category');
 
 
 
 Route::get('/basis/bitm/hello', 'WelcomeController@hello');
 
 
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
 
 
 
